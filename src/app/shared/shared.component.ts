@@ -31,6 +31,9 @@ export class SharedComponent implements OnInit {
     })
   }
 
+
+
+  
   submitReactiveForm(){
     console.log(this.registrationForm.value);
     if(this.registrationForm.valid){
