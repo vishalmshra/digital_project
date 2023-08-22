@@ -1,0 +1,48 @@
+<p-toast></p-toast>
+<div class="col-lg-12 " style=" width: 100%;">
+  <div class="row" style="--bs-gutter-x: 0.1rem;">
+    <div class="col-lg-5">
+      <div class="maindiv">
+        <div class="formdiv">
+        
+            <div class="row g-3" style="padding-top: 185px; padding-left: 30px;
+            padding-right: 30px;">
+              <h2 style="text-align: center; color: black; margin-bottom: 5px;">Login Form</h2>
+              <form [formGroup]="loginForm" (ngSubmit)="loginReactiveForm()" style="margin-top: -35%;">
+                <div class="row mb-3">
+                  <label for="Name" class="col-lg-3 col-md-4 col-sm-4 col- form-label">User Name</label>
+                  <div class="col-lg-8 col-md-8 col-sm-8 logform">
+                    <input type="Name" formControlName="UserName" class="form-control" style="margin-left: -10px; padding: 2px;
+              margin-top: 2px;">
+                  </div>
+                </div>
+                <div class="row mb-3" style="margin-bottom: 0.2rem!important;">
+                  <label for="password" class="col-lg-3 col-md-4 col-sm-4 col-form-label">Password</label>
+                  <div class="col-lg-8 col-md-8 col-sm-8 logform">
+                    <input type="password" formControlName="password" class="form-control" style="margin-left: -10px; padding: 2px;
+              margin-top: 2px;">
+                  </div>
+                </div>
+                <div class="col-auto" style="flex: 0 0 auto;
+                  width: auto;
+                  display: flex;
+                  justify-content: center;
+                  width: 100%;
+                  margin-bottom: 20px;
+                  margin-top: 15px;
+                  margin-left: 20px;">
+                  <button class="btn btn-primary logfor" style="margin-right: 5%;">Submit</button>
+                  <button class="btn btn-primary formreges" routerLink="/shared">Registration</button>
+
+                </div>
+              </form>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-7" >
+      <img src="../../assets/internet.jpg" alt="Paris" style="height: 100%; width: 100%; margin-top: 2px;">
+    </div>
+  </div>
+</div>

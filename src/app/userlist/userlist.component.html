@@ -1,0 +1,166 @@
+<p-toast></p-toast>
+<p-confirmDialog header="Confirmation" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+
+
+
+
+<!-- <div class="topnav bg-info">
+  
+  <a class="bg-dark" href="#home">Home</a>
+  <div class="topnav-right">
+   
+   <img src="../../assets/logo.jpg" width="100%" height="53px" alt="logo">
+  </div>
+</div>
+
+
+<div class="maindiv">
+   
+
+  <div class="sidenav">
+    <a href="#">Login</a>
+    <a href="#">Singup</a>
+
+    
+  </div> -->
+  <section>
+  <div class="table-responsive col-lg-12">
+<table class="table table-light table-striped table-hover table-borderless">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Mail</th>
+      <th scope="col" style="text-align: center;">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="fromgroup" *ngFor="let list of userListData">
+      <td>{{list.id}}</td>
+      <td>{{list.name}}</td>
+      <td>{{list.email}}</td>
+      <td style="text-align: center; display: flex; justify-content: center;">
+        <button type="button" (click)="showDialog(list.id)" class="btn btn-primary buttonedit">Edit</button>
+        <button type="button" (click)="deleteUserDetails(list.id)" class="btn btn-primary buttondelete" icon="pi pi-info-circle" label="Show">Delete</button>
+
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+  </div>
+
+  </section>
+  
+  
+    <!-- <table class="table table-bordered border-primary" style="width: 82%;
+height: 85%;
+padding: 3px;
+border: 2px solid; background-color: rgb(255, 255, 255); border-radius: 2px; margin-bottom: 40px; margin-left: 45px">
+ 
+  <tr class="table-active" >
+    <th style="width: .2%; padding: 4px; height: 24px;">Id</th>
+    <th style="width: 1.5%; padding: 4px; height: 24px;">Name</th>
+    <th style="width: 1%; padding: 4px; height: 24px;">Mail</th>
+    <th style="width: 1%; padding: 4px; height: 24px;">Action</th>
+    
+  </tr>
+  <tr class="fromgroup" *ngFor="let list of userListData">
+    <td style="width:03px; padding:4px; height: 38px;">{{list.id}}</td>
+    <td style="width:70px; 
+    padding: 4px; height: 38px;">{{list.name}}</td>
+    <td style="width:12px; 
+    padding: 4px; height: 35px;">{{list.email}}</td>
+    <td style="width:30px; height: 38px; text-align: center;">
+      <button type="button" (click)="showDialog(list.id)" class="btn btn-primary buttonedit">Edit</button>
+      <button type="button" (click)="deleteUserDetails(list.id)" class="btn btn-primary buttondelete" icon="pi pi-info-circle" label="Show">Delete</button>
+    </td> 
+  </tr>
+</table> -->
+ 
+     
+
+
+
+<!-- </div> -->
+<p-dialog [(visible)]="display"[style]="{width: '50vw'} ">
+  <div class="formdiv">
+    <div class="container">
+      <div class="row g-3" style="--bs-gutter-y: 0rem; --bs-gutter-x: 0rem;">
+        <h2 style="text-align: center; color: black; margin-bottom: 5px;">UPDATE FORM</h2>
+        <form [formGroup]="registrationForm" (ngSubmit)="submitReactiveUpdateForm()">
+          <div class="row mb-3">
+            <label for="Name" class="col-sm-3 col-form-label">Name</label>
+            <div class="col-sm-9 regform">
+              <input type="text" formControlName="firstName" class="form-control" id="inputName">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="Name" class="col-sm-3 col-form-label">Father Name</label>
+            <div class="col-sm-9 regform">
+              <input type="Name" formControlName="fatherName" class="form-control" id="fathername">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="email" class="col-sm-3 col-form-label">Email Id</label>
+            <div class="col-sm-9 regform">
+              <input type="email" formControlName="email" class="form-control" id="email" >
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="phone number" class="col-sm-3 col-form-label">Phone Number</label>
+            <div class="col-sm-9 regform">
+              <input type="text" formControlName="number" class="form-control" id="phonenum">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="adhar number" class="col-sm-3 col-form-label">Adhar Number</label>
+            <div class="col-sm-9 regform">
+              <input type="adhar" formControlName="adhar" class="form-control" id="Adharnum">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="dob" class="col-sm-3 col-form-label">Date Of Birth</label>
+            <div class="col-sm-9 regform">
+              <input type="date" formControlName="bdate" class="form-control" id="DOB">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label class="col-sm-3 col-form-label">Gender</label> <br>
+            <div class="col-sm-9 regform" style="display: flex;">
+              <div class="col-lg-2">
+                <input type="radio" formControlName="gender" id="male" name="gender" value="male" /> Male <br>
+              </div>
+              <div class="col-lg-2">
+                <input type="radio" id="female" name="gender" value="female" /> Female <br />
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword" class="col-sm-3 col-form-label">Password</label>
+            <div class="col-sm-9 regform">
+              <input type="password" formControlName="password" class="form-control" id="Password">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="Confirm Password" class="col-sm-3 col-form-label">Confirm Password</label>
+            <div class="col-sm-9 regform">
+              <input type="password" formControlName="cpassword" class="form-control" id="ConfirmPassword">
+            </div>
+          </div>
+          <div class="col-auto" style="flex: 0 0 auto;
+             width: auto;
+             display: flex;
+             justify-content: center;
+             width: 100%; margin-bottom: 5px; padding: 0 8px;
+             ">
+            <button type="submit" class="btn btn-primary submit">Update</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</p-dialog>
+<p-messages [(value)]="msgs"></p-messages>

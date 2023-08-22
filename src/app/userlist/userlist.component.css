@@ -1,0 +1,272 @@
+section{
+  background-color: #000000;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+
+@media screen and (max-width: 768px){
+  section{
+    padding: 10px;
+  }
+}
+
+.maindiv{
+        width: 100vw;
+        /* height: 100vh; */
+        margin-top: 25px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        height: 450px;
+    }
+
+    /* .tablediv{
+        height: 95%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px;
+        border-radius: 1%;
+        background-color: rgb(255, 247, 247);
+        padding: 1px;
+    } */
+    
+    /* #myInput {
+      background-color: blanchedalmond;
+      background-position: 10px 10px;
+      background-repeat: no-repeat;
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+    }
+     */
+    /* #myTable {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #ddd;
+      font-size: 18px;
+    }
+    
+    #myTable th, #myTable td {
+      text-align: left;
+      padding: 12px;
+    }
+    
+    #myTable tr {
+      border-bottom: 1px solid #ddd;
+    }
+    
+    #myTable tr.header, #myTable tr:hover {
+      background-color: #f1f1f1;
+    } */
+    .button:hover {
+      background-color: #4CAF50; /* Green */
+      color: white;
+    }
+
+ /* .buttonedit{
+    background-color: red;
+    padding: 1px;
+    color: black;
+    font-size: 28px;
+ }
+.buttondelete{
+    background-color: blue;
+    padding: 1px;
+    /* margin-right: 25%; */
+    /* color: black; 
+    font-size: 28px;
+*/ */
+.formdiv{
+  height: 38%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px;
+  border-radius: 1%;
+  background-color: rgb(255, 255, 255);
+  padding: 1px;
+  margin-right: 15px;
+  padding: 0px 2px;
+  
+}
+
+.regform{
+  padding: 1px;
+  margin-top: 1px;
+
+}
+/* /* .formtable{
+  padding: 2%;
+    margin: 1%;
+    box-sizing: border-box;
+    /* border-block-color: black; */
+    /* background-color: gray;
+    width: 68%;
+    height: 17%;
+    border: 1px solid;
+    margin-right: 12px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+   */ 
+.formgroup{
+  background-color: rgb(0, 0, 0);
+  width: 46%;
+  height: 30%;
+  padding: 1px;
+  margin-bottom: 4px;
+  margin-left: 1px;
+  border: 1px solid;
+}
+/* .formtable{
+  padding: 2px;
+  margin-left: 2px;
+ 
+}
+    
+.table, th, td {
+  border: 2px solid rgb(183, 183, 196);
+} */
+.btn{
+  width: 70px;
+}
+
+
+/* Side bar Design hear */
+
+
+/* .sidenav {
+  margin-top: 54px;
+  height: 91%;
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255 252 252);
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: -6px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  text-align: center;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+/* } */
+
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255 252 252);
+}
+
+.topnav a {
+  float: left;
+  color: #818181;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #a2b3ad;
+  color: black;
+}
+
+
+.topnav-right {
+  float: right;
+}  */
+.buttondelete{
+  margin-left: 8px;  padding: 10px 20px;
+      font-size: 13px;
+      padding: 05px 15px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: red;
+      border: none;
+      border-radius: 05px;
+      margin-left: 15px;
+      opacity: 0.6;
+  transition: 0.2s;
+  margin-left: 5px;
+  box-shadow: 0 00px #999; width: 95px;
+}
+.buttonedit{
+  display: inline-block;
+      padding: 05px 15px;
+      font-size: 13px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #10d317;
+      border: none;
+      border-radius: 05px;
+      box-shadow: 0 0px #999;
+      margin-left: 6px;
+      opacity: 0.6;
+  transition: 0.2s;
+  width: 95px
+}
+.submit{
+  display: inline-block;
+      padding: 05px 15px;
+      font-size: 13px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #003ee7;
+      border: none;
+      border-radius: 05px;
+      box-shadow: 0 0px #999;
+      margin-left: 6px;
+      opacity: 0.6;
+  transition: 0.2s;
+  width: 95px
+}

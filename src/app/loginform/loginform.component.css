@@ -1,0 +1,67 @@
+.maindiv{
+    width: 100%;
+    height: 97vh;
+    background-color: rgb(249, 240, 250);
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.formdiv{
+    height: auto;
+    width: 100%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    border: 1px;
+    border-radius: 1%;
+    background-color: rgba(255, 255, 255, 0.788);
+    padding: 1px;
+}
+/* .logform{
+    padding: 1px;
+    margin-top: 1px;
+
+}
+.btn btn-primary {
+    width: 40%;
+    height: 50%;
+} */
+.logfor{
+    display: inline-block;
+    padding: 05px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(5, 21, 170);
+    border: none;
+    border-radius: 05px;
+    box-shadow: 0 0px #999;
+    margin-left: 3px;
+    opacity: 0.6;
+    transition: 0.2s;
+    width: 95px;
+}
+.formreges{
+    margin-left: 3px; 
+    padding: 05px 10px;
+    font-size: 13px;
+    padding: 05px 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(26, 165, 26);
+    border: none;
+    border-radius: 05px;
+    margin-left: 3px;
+    opacity: 0.6;
+    transition: 0.2s;
+    margin-left: 3px;
+    box-shadow: 0 00px #999; width: 95px;
+    /* justify-content: center;
+    align-items: center; */
+}

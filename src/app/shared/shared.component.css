@@ -1,0 +1,63 @@
+.maindiv{
+    width: 100%;
+    height: 99%;
+    /* background-color:rgba(173, 44, 224, 0.788); */
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.formdiv{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-top: 7px;
+    /* justify-content: center;
+    align-items: center; */
+    border: 1px;
+    border-radius: 1%;
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+}
+
+.login{
+    display: inline-block;
+    padding: 05px 15px;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #10d317;
+    border: none;
+    border-radius: 05px;
+    box-shadow: 0 0px #999;
+    margin-left: 20px;
+    opacity: 0.6;
+    transition: 0.2s;
+    width: 85px;
+}
+.submit{
+    margin-left: 8px; 
+    padding: 10px 20px;
+    font-size: 13px;
+    padding: 05px 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(123, 5, 170);
+    border: none;
+    border-radius: 05px;
+    margin-left: 20px;
+    opacity: 0.6;
+    transition: 0.2s;
+    margin-left: 5px;
+    box-shadow: 0 00px #999; width: 85px;
+}
+.formregis{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(173, 44, 224, 0.788);
+}

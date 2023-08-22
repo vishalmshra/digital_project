@@ -1,0 +1,99 @@
+<div class="col-lg-12 formregis">
+  <p-toast></p-toast>
+  <div class="row"  style="--bs-gutter-x: 0.0rem;">
+    <div class="col-lg-7" style="height: 100% mar;
+    margin-top: 5px;">
+      <img src="../../assets/istockphoto.jpg" alt="Paris" width="100%" height="100%" style="margin-top: 2px;">
+    </div>
+    <div class="col-lg-5">
+      <!-- <p-toast position="top-left" key="tl"></p-toast> -->
+     
+      <div class="maindiv">
+      
+        <div class="formdiv" style="margin-right: 5px;">
+          <div class="container">
+            <div class="row g-3" style="margin-bottom: 8px;">
+              <h2 style="text-align: center; color: black; padding-top:6px;">REGISTRATION FORM</h2>
+              <form [formGroup]="registrationForm" (ngSubmit)="submitReactiveForm()">
+                <div class="row mb-3">
+                  <label for="Name" class="col-lg-4 col-md-4 col-sm-4 col-form-label">Name</label>
+                  <div class="col-lg-8 col-md-8 col-sm-8 regform">
+                    <input type="Name" formControlName="firstName" class="form-control" id="inputName">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="Name" class="col-lg-4 col-md-4 col-sm-4 col-form-label">Father Name</label>
+                  <div class="col-lg-8 col-md-8 col-sm-8 regform">
+                    <input type="Name" formControlName="fatherName" class="form-control" id="inputName">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="email" class="col-lg-4 col-md-4 col-sm-4 col-form-label">Email Id</label>
+                  <div class="col-lg-8 col-md-8 col-sm-8 regform">
+                    <input type="email" formControlName="email" class="form-control" id="inputmail">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="phone number" class="col-lg-4 col-md-4 col-sm-4 col-form-label">Phone Number</label>
+                  <div class="col-lg-8 col-md-8 col-sm-8 regform">
+                    <input type="text" formControlName="number" class="form-control" id="inputNumber">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="adhar number" class="col-lg-4 col-md-4 col-sm-4 col-form-label">Adhar Number</label>
+                  <div class="col-lg-8 col-md-8 col-sm-8 regform">
+                    <input type="adhar" formControlName="adhar" class="form-control" id="inputAdhar">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="dob" class="col-lg-4 col-md-4 col-sm-4 col-form-label">Date Of Birth</label>
+                  <div class="col-lg-8 col-md-8 col-sm-8 regform">
+                    <input type="date" formControlName="bdate" class="form-control" id="inputdate of birth">
+                  </div>
+                </div>
+      
+                <div class="row mb-3">
+                  <label class="col-lg-4 col-md-4 col-sm-4 col-form-label">Gender</label> <br>
+                  <div class="col-lg-8 col-md-8 col-sm-8 regform" style="display: flex;">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <input type="radio" formControlName="gender" id="gender" name="gender" value="male" /> Male <br>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <input type="radio" id="gender" name="gender" value="female" /> Female <br />
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword" class="col-lg-4 col-md-4 col-sm-4 col-form-label">Password</label>
+                  <div class="col-lg-8 col-md-8 col-sm-8 regform">
+                    <input type="password" formControlName="password" class="form-control" id="inputPassword">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="Confirm Password" class="col-lg-4 col-md-4 col-sm-4 col-form-label">Confirm Password</label>
+                  <div class="col-lg-8 col-md-8 col-sm-8 regform">
+                    <input type="password" formControlName="cpassword" class="form-control" id="inputConfirmPassword">
+                  </div>
+                </div>
+                <div class="col-auto" style="flex: 0 0 auto;
+                   width: auto;
+                   display: flex;
+                   justify-content: center;
+                   width: 100%;">
+                  <button type="submit" class="btn btn-primary submit">Submit</button>
+                  <button type="login" class="btn btn-primary login" routerLink="/loginform">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- <p-toast position="top-left" key="tl"></p-toast> -->
+</div>
+
+
+
